@@ -51,7 +51,7 @@ class Experiment {
     const reactionDelay = this.reactionTime - this.markTime
     this.addMetric(reactionDelay)
     this.display.clear()
-    this.display.drawText(Math.round(this.getAverageMetric()))
+    this.display.drawText(Math.round(this.getAverageMetric()) + ' ms')
     this.waitForMark()
   }
 
